@@ -372,14 +372,17 @@ def add_sales(data, FILE_PATH):
             # Add new sale to the DataFrame
             sales_data.append([transaction_id, transaction_date, transaction_time, store_id, store, product_id, product_price, product_category, product_name, quantity])
             new_sale = pd.DataFrame(sales_data, columns=(["transaction_id","transaction_date","transaction_time","store_id","store_location","product_id","unit_price","product_category","product_type","transaction_qty"]))
-            data = pd.concat([data, new_sale], ignore_index=True)
-            print(f"Added: {quantity} Sale(s) at {store}")
-            try:
-                print('Saving data')
-                data.to_excel(FILE_PATH, index=False)
-                print(f"Saved data to {FILE_PATH}")
-            except Exception as e:
-                print(f"Error saving to {FILE_PATH}: {e}")
+            if data.empty:
+                data = pd.DataFrame(new_sale)
+            else:
+                data = pd.concat([data, new_sale], ignore_index=True)
+                print(f"Added: {quantity} Sale(s) at {store}")
+        try:
+            print('Saving data')
+            data.to_excel(FILE_PATH, index=False)
+            print(f"Saved data to {FILE_PATH}")
+        except Exception as e:
+            print(f"Error saving to {FILE_PATH}: {e}")
         else:
             break
 
