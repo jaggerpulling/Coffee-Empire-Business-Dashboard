@@ -19,6 +19,6 @@ loads sample datasets, and visualizes data with interactive charts using Dash an
 
 
 3. **Run the Program**:
-   - run 'run_program'
+   - Double-click `run_program.bat` to run the python program.
 
 
