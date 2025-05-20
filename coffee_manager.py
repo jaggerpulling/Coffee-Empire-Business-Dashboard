@@ -245,6 +245,7 @@ def add_sales(data, FILE_PATH):
 
             #Getting Store Value
                 store_choice = input('Select Store: ').strip()
+                store_choice = int(store_choice)
                 if store_choice == '0':
                     if sales_entries > 1:
                         choice = input("Are you sure you would like to exit? You have multiple Entries. Exiting will not save data.(y/n)")
