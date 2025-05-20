@@ -1,6 +1,6 @@
 # Coffee Shop Sales Dashboard
 
-This project is a dashboard for analyzing coffee shop sales data. 
+This project is a dashboard for analyzing coffee shop sales data. It was built around a Coffee sales data set from Kaggle.  
 my program can generates random sales, analyze sales metrics, add invidiual sales, supports trending products, 
 loads sample datasets, and visualizes data with interactive charts using Dash and Plotly.
 
