@@ -1,6 +1,6 @@
 # Coffee Shop Sales Dashboard
 
-This project is a dashboard for analyzing coffee shop sales data. It was built around a Coffee sales data set from Kaggle.  
+This project is a dashboard for analyzing coffee shop sales data. 
 my program can generates random sales, analyze sales metrics, add invidiual sales, supports trending products, 
 loads sample datasets, and visualizes data with interactive charts using Dash and Plotly.
 
@@ -15,10 +15,16 @@ loads sample datasets, and visualizes data with interactive charts using Dash an
    - Unzip `CoffeeDashboardProject.zip` to a folder (e.g., `CoffeeDashboardProject`).
 
 2. **Install Dependencies**:
-     - Double-click `install_dependencies.bat` to install required libraries.
-
+     - Double-click `install_dependencies.bat` to set up.
+	- This creates a virtual environment (`venv`) to isolate dependencies, 
+	ensuring no impact on your system.
 
 3. **Run the Program**:
-   - Double-click `run_program.bat` to run the python program.
+   - run 'run_program'
 
+4. **Uninstallation**:
+	-To remove the project and its dependencies:
+		-Double-click cleanup.bat to delete the virtual environment (venv) and generated files (e.g., output Excel files).
+		-Optionally, delete the entire project folder to remove all files (e.g., main.py, requirements.txt, batch files).
+	-The virtual environment ensures no system-wide changes persist.
 
