@@ -561,7 +561,7 @@ def run_dashboard(data):
         app = Dash(__name__, server=server, external_stylesheets=[dbc.themes.CYBORG])
         app.title = "Coffee Intelligence Dashboard"
         app.layout = dbc.Container([
-            html.H1("☕ Coffee Intelligence Dashboard", className="text-center mb-4",style={"color": "#00CED1"}),
+            html.H1(" Coffee Intelligence Dashboard", className="text-center mb-4",style={"color": "#00CED1"}),
             dbc.Row([
                 dbc.Col(dbc.Card([
                     dbc.CardHeader("Total Units Sold"),
@@ -577,7 +577,7 @@ def run_dashboard(data):
                 ], color="dark", inverse=True), width=4),
             ], className="mb-4"),
             dbc.Row([
-                dbc.Col(html.H4(f"🧠 Top-selling product: {top_product}",style={"color": "#00CED1"}))
+                dbc.Col(html.H4(f" Top-selling product: {top_product}",style={"color": "#00CED1"}))
             ], className="mb-4"),
             dbc.Row([
                 dbc.Col(html.P("Consider bundling it or featuring it in promotions."))
@@ -755,4 +755,5 @@ if __name__ == "__main__":
                 data.to_excel(FILE_PATH, index=False)
                 print(f"Data saved to {FILE_PATH}")
             except Exception as e:
+
                 print(f"Error saving data to {FILE_PATH}: {e}")
